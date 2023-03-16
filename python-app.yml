@@ -19,7 +19,7 @@ class Declaration(loader.Module):
     """If you are too humble to declare your love, use this module"""
 
     strings = {
-        "name": "Declaration",
+        "name": "Rusya",
         "not_private": (
             "<emoji document_id=6053166094816905153>💀</emoji> <b>This command must be"
             " runned in personal messages...</b>"
@@ -252,10 +252,10 @@ class Declaration(loader.Module):
     }
 
     async def client_ready(self):
-        self.ids = self.pointer("declarations", {})
+        self.ids = self.pointer("Rusya", {})
 
     @loader.command(ru_doc="Признаться в любви")
-    async def declare(self, message: Message):
+    async def decl(self, message: Message):
         """Declare love"""
         if not message.is_private:
             await utils.answer(message, self.strings("not_private"))
