@@ -120,8 +120,7 @@ class Declaration(loader.Module):
                 utils.escape_html(message.from_user.full_name),
             ),
         )
-       await
-self.inline.bot.send_message(
+       await self.inline.bot.send_message(
             self._client.tg_id,
             self.strings("read_2").format(
                 utils.escape_html(message.from_user.full_name),
