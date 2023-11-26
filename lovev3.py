@@ -18,35 +18,9 @@ logger = logging.getLogger(__name__)
 class Declaration(loader.Module):
     """If you are too humble to declare your love, use this module"""
 
-    strings = {
-        "name": "Ksenia",
-        "not_private": (
-            "<emoji document_id=6053166094816905153>💀</emoji> <b>This command must be"
-            " runned in personal messages...</b>"
-        ),
-        "ily": (
-            "<emoji document_id=5465143921912846619>💭</emoji> <b>You have 1 new"
-            ' message. <a href="https://t.me/{}?start=read_{}">Please, read it</a></b>'
-        ),
-        "ily_love": [
-            "👋 <i>Hi. I'm <b>Hikka</b>.</i>",
-            (
-                "🫣 <i>My owner is very humble to say something, so he asked me to help"
-                " him...</i>"
-            ),
-            "🥰 <i>He just wanted you to know, that <b>he loves you</b>...</i>",
-            "🤗 <i>These are sincere feelings... Please, don't blame him.</i>",
-            "🫶 <i>Better say him some warm words... 🙂</i>",
-        ],
-        "talk": "🫰 Talk",
-        "404": "😢 <b>Message has already disappeared. You can't read it now...</b>",
-        "read": "🫰 <b>{} has read your declaration</b>",
-        "args": (
-            "<emoji document_id=6053166094816905153>💀</emoji> <b>Wrong arguments...</b>"
-        ),
-    }
-
+    
     strings_ru = {
+        "name": "Ksenia",
         "not_private": (
             "<emoji document_id=6053166094816905153>💀</emoji> <b>Эту команду нужно"
             " выполнять в личных сообщениях...</b>"
