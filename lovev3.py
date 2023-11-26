@@ -20,7 +20,7 @@ class decllove(loader.Module):
 
     
     strings_ru = {
-        "name": "Lover",
+        "name": "LoveAndDecl",
         "not_private": (
             "<emoji document_id=6053166094816905153>💀</emoji> <b>Эту команду нужно"
             " выполнять в личных сообщениях...</b>"
@@ -60,7 +60,7 @@ class decllove(loader.Module):
 
 
     async def client_ready(self):
-        self.ids = self.pointer("lover", {})
+        self.ids = self.pointer("LoveAndDecl", {})
 
     @loader.command(ru_doc="Признаться в любви")
     async def decl(self, message: Message):
